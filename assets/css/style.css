@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: linear-gradient(to right, #6161b8, #d31010); Meh, maybe something? */
+}
+
+body {
+  /* background-image: url("../img/background-pic.jpeg"); */
+  background-color: #363690;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#game {
+  display: none;
+}
+
+#canvas {
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+  width: 85%;
+  position: relative;
+}
+
+#score {
+  text-align: center;
+  font-size: 24px;
+}
+
+#lives {
+  text-align: center;
+  font-size: 24px;
+}
+
+#gameover {
+  text-align: center;
+  font-size: 36px;
+  display: none;
+}
+
+#start-screen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #363690;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-screen h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+#start-screen h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+#start-screen button {
+  width: 200px;
+  height: 60px;
+  margin: 20px;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #363690;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+#start-screen button:hover {
+  background-color: #3636a0;
+  transform: scale(1.1);
+}
+
+#how-to-play {
+  display: none;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #363690;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 10;
+  margin: 20px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  background: linear-gradient(to right, #363690, #3636a0);
+  font-size: 18px;
+}
+
+#close-button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #363690;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+}
+
+#close-button:hover {
+  background-color: #3636a0;
+  transform: scale(1.1);
+}

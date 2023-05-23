@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Meta data for embedding -->
+  <meta name="title" content="Live or Die"/>
+  <meta name="description" content="Embark on a journey beyond imagination"/>
+  
+  <title>Live or Die</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- Add favicon (image on the tab) -->
+  <!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /> -->
+
+  <script src="assets/js/game.js"></script>
+  <script src="assets/js/script.js" defer></script>
+
+</head>
+
+<body>
+  <div id="start-screen">
+    <h1>Live or Die</h1>
+    <h2>Embark on a journey beyond imagination</h2>
+    <button id="play-button">Play</button>
+    <button id="how-to-play-button">How to play</button>
+  </div>
+
+  <div id="game">
+    <canvas id="canvas"></canvas>
+    <div id="score">Poäng: 0</div>
+    <div id="gameover">Game Over</div>
+    <div id="lives">Lives: 3</div>
+  </div>
+
+  <div id="how-to-play">
+    <button id="close-button">X</button>
+    <h3>How to play:</h3>
+    <ul>
+      <li>The goal of the game is to survive as long as possible by shooting zombies that are coming towards you.</li>
+      <li>Use the arrow keys to move and rotate your player on the screen. You can move forward, backward, left or
+        right.</li>
+      <li>Press the spacebar to shoot bullets at the zombies. You can only shoot one bullet at a time.</li>
+      <li>Each zombie has a health of 3 and can be killed by three bullets. You get points for killing zombies, depending
+        on their size. Bigger zombies give more points than smaller ones.</li>
+      <li>The zombies will spawn randomly from the edges of the screen and will chase you. They will also get faster and
+        more frequent as you score more points.</li>
+      <li>You have 3 lives to start with. You lose a life if a zombie touches you. You also become invulnerable for a
+        short time after losing a life.</li>
+      <li>The game is over when you lose all your lives.</li>
+      <li>You can pause and resume the game by pressing the escape key.</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
